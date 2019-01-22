@@ -1,4 +1,9 @@
 /****** Main Styling ******/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -7,10 +12,20 @@ body {
   background-color: #c2d6d6;
 	text-align: center;
 	line-height: 1.4em;
+  margin: 5px;
 }
 
-h3 {
-  margin-top: 30px;
+h2{
+  background-color: #94b8b8;
+  padding: 8px;
+}
+
+.top-padding {
+  margin-top: 20px;
+}
+
+.bottom-padding {
+  margin-bottom: 20px;
 }
 
 .user-stories {
@@ -53,4 +68,28 @@ input {
 input[type=text] {
   width: 220px;
   text-align: center;
+}
+
+#footer {
+  background-color: #94b8b8;
+  font-size: 0.8em;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+.fab {
+  font-size: 1.5em;
+}
+
+.right {
+  float: right;
+}
+
+td {
+  padding: 3px 5px 0px;
 }

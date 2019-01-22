@@ -4,15 +4,15 @@
 
    <head>
       <title>URL Shortener</title>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
 
    <body>
       <div>
         <h2>API Project: URL Shortener Microservice</h2>
         <div class="user-stories">
-          <ol><h3>User Stories :</h3>
+          <ol><h3 class="top-padding bottom-padding">User Stories :</h3>
             <li>POST a URL to <code>https://wiry-ski.glitch.me/api/shorturl/new</code> and receive a shortened URL in JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
             <li>If an invalid URL is passed, that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, or does not point to a valid site, 
                 the JSON response will contain an error.
@@ -21,8 +21,9 @@
             <li>When the shortened URL is visited, it will redirect to the original link.</li>
           </ol>
         </div>
-        
-        <h3>Short URL Creation </h3>
+
+        <br>
+        <h3 class="bottom-padding">Short URL Creation </h3>
         <p>
           Example: <code>POST https://wiry-ski.glitch.me/api/shorturl/new/https://www.google.com</code>
         </p>
@@ -31,13 +32,24 @@
           <input id="url_input" type="text" name="url" value="https://www.google.com">
           <input type="submit" value="POST URL">
         </form>
-        <h3>Visiting the Shortened URL Example:</h3>
+        <h3 class="top-padding">Visiting the Shortened URL Example:</h3>
         <a href="https://wiry-ski.glitch.me/api/shorturl/3">
           https://wiry-ski.glitch.me/api/shorturl/3
         </a>
 
-        <h3>Will Redirect to:</h3>
+        <h3 class="top-padding">Will Redirect to:</h3>
         <p>https://www.google.com</p>
+        
+        <br>
+        <table id="footer">
+          <tr>
+            <td>
+            <a href="https://github.com/atiyahaider/Request-header-parser" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;VIEW CODE</a>            
+            </td>
+            <td class="right">Designed and Coded By: <a target="_blank" href="https://codepen.io/atiyahaider/">Atiya Haider</a></td>
+          </tr>
+        </table>
+
       </div>
    </body>
 
