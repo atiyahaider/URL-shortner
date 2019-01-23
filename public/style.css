@@ -42,6 +42,10 @@ h2{
   margin-bottom: 1em;
 }
 
+#break {
+  display: none;
+}
+
 code {
   font-family: monospace;
   padding: 2px;
@@ -92,4 +96,25 @@ input[type=text] {
 
 td {
   padding: 3px 5px 0px;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 14px;
+  }
+  .user-stories {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 13px;
+  }
+  .user-stories {
+    width: 90%;
+  }
+  #break {
+    display: inline-block;
+  }
 }
