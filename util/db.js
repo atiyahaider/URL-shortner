@@ -15,7 +15,7 @@ function initDb(callback) {
   }
 
   // Connect to the database
-  mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}, connected);
+  mongoose.connect(process.env.MONGO_URI, {useMongoClient: true}, connected);
   
   function connected(err, db) {
     if (err) {
@@ -32,6 +32,6 @@ function initDb(callback) {
 }
 
 function getDb() {
-    assert.ok(_db, "Db has not been initialized. Please called init first.");
+    //assert.ok(_db, "Db has not been initialized. Please called init first.");
     return _db;
 }

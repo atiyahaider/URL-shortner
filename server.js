@@ -31,7 +31,7 @@ app.get("/", function(req, res) {
 app.use('/api/shorturl', shortUrl);
 
 const initDb = require("./util/db").initDb;
-const getDb = require("./util/db").getDb;
+// const getDb = require("./util/db").getDb;
 const port = process.env.PORT || 3000;
 
 //initialize db before starting up the server
